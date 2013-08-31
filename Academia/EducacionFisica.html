@@ -22,9 +22,9 @@
     <link rel="shortcut icon" href="http://htmlstream.com/unify/favicon.ico">        
     <!-- CSS Implementing Plugins -->    
     <link rel="stylesheet" href="http://htmlstream.com/unify/assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="http://htmlstream.com/unify/assets/plugins/flexslider/flexslider.css" type="text/css" media="screen">          
+    <link rel="stylesheet" href="http://htmlstream.com/unify/assets/plugins/bxslider/jquery.bxslider.css">        
     <!-- CSS Theme -->    
-    <link rel="stylesheet" href="css/themes/default.css" id="style_color">
+    <link rel="stylesheet" href="http://htmlstream.com/unify/assets/css/themes/default.css" id="style_color">
     <link rel="stylesheet" href="http://htmlstream.com/unify/assets/css/themes/headers/default.css" id="style_color-header-1">    
 </head> 
 
@@ -139,13 +139,13 @@
                             </ul>
                             <b class="caret-out"></b>                        
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio
                                 <b class="caret"></b>                            
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="portfolio_item.html">Portfolio Item</a></li>
+                                <li class="active"><a href="portfolio_item.html">Portfolio Item</a></li>
                                 <li><a href="portfolio_2columns.html">Portfolio 2 Columns</a></li>
                                 <li><a href="portfolio_3columns.html">Portfolio 3 Columns</a></li>
                                 <li><a href="portfolio_4columns.html">Portfolio 4 Columns</a></li>
@@ -164,12 +164,12 @@
                             </ul>
                             <b class="caret-out"></b>                        
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact
                                 <b class="caret"></b>                            
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="active"><a href="page_contact.html">Contact Default</a></li>
+                                <li><a href="page_contact.html">Contact Default</a></li>
                                 <li><a href="page_contact1.html">Contact Boxed Map</a></li>
                             </ul>
                             <b class="caret-out"></b>                        
@@ -192,178 +192,148 @@
 <!--=== End Header ===-->
 
 <!--=== Breadcrumbs ===-->
-<div class="breadcrumbs">
+<div class="breadcrumbs margin-bottom-40">
 	<div class="container">
-        <h1 class="color-green pull-left">Contactenos</h1>
+        <h1 class="color-green pull-left">Academia</h1>
         <ul class="pull-right breadcrumb">
             <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-            <li class="active">Contact</li>
+            <li><a href="portfolio.html">Portfolio</a> <span class="divider">/</span></li>
+            <li class="active">Portfolio Item</li>
         </ul>
     </div><!--/container-->
 </div><!--/breadcrumbs-->
 <!--=== End Breadcrumbs ===-->
 
-<!-- Google Map -->
-<div id="map" class="map margin-bottom-40">
-</div><!---/map-->
-<!-- End Google Map -->
-
 <!--=== Content Part ===-->
-<div class="container">		
-	<div class="row-fluid">
-		<div class="span9">
-            <div class="headline"><h3>Contacto</h3></div>
-            <p>Para nosotros es importante saber de sus opiniones, quejas, reclamos, sugrencias etc. Por favor háganos saber todo lo que considere relevante llenando el siguiente formulario:</p><br />
-			<form>
-                <label>Nombre</label>
-                <input type="text" class="span7 border-radius-none" />
-                <label>E-mail <span class="color-red">*</span></label>
-                <input type="text" class="span7 border-radius-none" />
-                <label>Mensaje</label>
-                <textarea rows="8" class="span10"></textarea>
-                <p><button type="submit" class="btn-u">Enviar Mensaje</button></p>
-            </form>
-        </div><!--/span9-->
+<div class="container portfolio-item"> 	
+	<div class="row-fluid margin-bottom-20"> 
+		<!-- Carousel -->
+        <div class="span7">
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/Español/Español1.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h4>First Thumbnail label</h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/Español/Español2.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h4>Second Thumbnail label</h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/Español/Español3.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h4>Third Thumbnail label</h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-arrow">
+                    <a data-slide="prev" href="#myCarousel" class="left carousel-control"><i class="icon-angle-left"></i></a>
+                    <a data-slide="next" href="#myCarousel" class="right carousel-control"><i class="icon-angle-right"></i></a>
+                </div>
+            </div>
+        </div><!--/span7-->
+        <!-- //End Tabs and Carousel -->
         
-		<div class="span3">
-        	<!-- Contacts -->
-            <div class="headline"><h3>Contacto</h3></div>
-            <ul class="unstyled who margin-bottom-20">
-                <li><a href="#"><i class="icon-home"></i>Calle 15 Norte Tulcán, Popayán, Cauca, Colombia</a></li>
-                <li><a href="#"><i class="icon-envelope-alt"></i>info@ietip.edu.co</a></li>
-                <li><a href="#"><i class="icon-phone-sign"></i>2(032) 8232197</a></li>
-                <li><a href="http://www.ietip.edu.co"><i class="icon-globe"></i>http://www.ietip.edu.co</a></li>
-            </ul>
-
-        	<!-- Business Hours -->
-            <div class="headline"><h3>Horario De Atención</h3></div>
+        <div class="span5">
+        	<h3>Educación Física</h3>
+            <p align="justify">La educación física es la educación que abarca todo lo relacionado al uso del cuerpo. Desde un punto de vista pedagógico, ayuda a la formación integral del ser humano. Esto es, que con su práctica se impulsan los movimientos creativos e intencionales, la manifestación de la corporidad a través de procesos afectivos y cognitivos de orden superior. De igual manera, se promueve el disfrute de la movilización corporal y se fomenta la participación en actividades caracterizadas por cometidos motrices. De la misma manera se procura la convivencia, la amistad y el disfrute, así como el aprecio de las actividades propias de la comunidad.</p></br>
+			<p align="justify">Para el logro de estas metas se vale de ciertas fuentes y medios que, dependiendo de su enfoque, ha variado su concepción y énfasis con el tiempo. Sin embargo, lo que es incuestionable, son las aportaciones que la práctica de la educación física ofrece a la sociedad: contribuye al cuidado y preservación de la salud,2 al fomento de la tolerancia y el respeto de los derechos humanos, la ocupación del tiempo libre, impulsa una vida activa en contra del sedentarismo, etc. Los medios utilizados son el juego motor, la iniciación deportiva, el deporte educativo, la recreación, etc. La tendencia actual en educación física es el desarrollo de Competencia que permitan la mejor adaptabilidad posible a situaciones cambiantes en el medio y la realidad.</p>
             <ul class="unstyled">
-            	<li><strong>Lunes-Viernes:</strong> 8am-12m y 2pm-6pm</li>
-            	<li><strong>Sabado:</strong> 8am-12m</li>
-            	<li><strong>Domingo:</strong> Cerrado</li>
+            	<li><i class="icon-user color-green"></i> Miller Correa - "Moncho"</li>
+            	<li><i class="icon-calendar color-green"></i> 14,2003 February</li>
+            	<li><i class="icon-tags color-green"></i> Websites, Google, HTML5/CSS3</li>
             </ul>
+            <p><a class="btn-u btn-u-large" href="#">VISITE EL BLOG</a></p>
+        </div>
+    </div><!--/row-fluid-->
 
-        	<!-- Why we are? -->
-            <div class="headline"><h3>Why we are?</h3></div>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-            <ul class="unstyled">
-            	<li><i class="icon-ok color-green"></i> Odio dignissimos ducimus</li>
-            	<li><i class="icon-ok color-green"></i> Blanditiis praesentium volup</li>
-            	<li><i class="icon-ok color-green"></i> Eos et accusamus</li>
-            </ul>
-        </div><!--/span3-->
-    </div><!--/row-fluid-->        
-
-    <!-- Our Clients -->
-    <div id="clients-flexslider" class="flexslider home clients">
-        <div class="headline"><h3>Our Clients</h3></div>    
-        <ul class="slides">
+	<!-- Recent Works -->
+    <div class="headline"><h3>Recent Works</h3></div>
+    <div class="row-fluid margin-bottom-40">
+        <ul id="list" class="bxslider recent-work">
             <li>
                 <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/hp_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/hp.png" class="color-img" alt="" />
+                	<em class="overflow-hidden"><img src="http://htmlstream.com/unify/assets/img/carousel/2.jpg" alt="" /></em>
+                    <span>
+                        <strong>Happy New Year</strong>
+                        <i>Anim pariatur cliche reprehenderit</i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/igneus_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/igneus.png" class="color-img" alt="" />
+                	<em class="overflow-hidden"><img src="http://htmlstream.com/unify/assets/img/carousel/9.jpg" alt="" /></em>
+                    <span>
+                        <strong>Award Winning Agency</strong>
+                        <i>Responsive Bootstrap Template</i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/vadafone_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/vadafone.png" class="color-img" alt="" />
+                	<em class="overflow-hidden"><img src="http://htmlstream.com/unify/assets/img/carousel/4.jpg" alt="" /></em>
+                    <span>
+                        <strong>Wolf Moon Officia</strong>
+                        <i>Pariatur prehe cliche reprehrit</i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/walmart_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/walmart.png" class="color-img" alt="" />
+                	<em class="overflow-hidden"><img src="http://htmlstream.com/unify/assets/img/carousel/5.jpg" alt="" /></em>
+                    <span>
+                        <strong>Food Truck Quinoa Nesciunt</strong>
+                        <i>Craft labore wes anderson cred</i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/shell_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/shell.png" class="color-img" alt="" />
+                	<em class="overflow-hidden"><img src="http://htmlstream.com/unify/assets/img/carousel/6.jpg" alt="" /></em>
+                    <span>
+                        <strong>Happy New Year</strong>
+                        <i>Anim pariatur cliche reprehenderit</i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/natural_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/natural.png" class="color-img" alt="" />
+                	<em class="overflow-hidden"><img src="http://htmlstream.com/unify/assets/img/carousel/7.jpg" alt="" /></em>
+                    <span>
+                        <strong>Award Winning Agency</strong>
+                        <i>Responsive Bootstrap Template</i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/aztec_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/aztec.png" class="color-img" alt="" />
+                	<em class="overflow-hidden"><img src="http://htmlstream.com/unify/assets/img/carousel/8.jpg" alt="" /></em>
+                    <span>
+                        <strong>Wolf Moon Officia</strong>
+                        <i>Pariatur prehe cliche reprehrit</i>
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/gamescast_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/gamescast.png" class="color-img" alt="" />
+                	<em class="overflow-hidden"><img src="http://htmlstream.com/unify/assets/img/carousel/9.jpg" alt="" /></em>
+                    <span>
+                        <strong>Food Truck Quinoa Nesciunt</strong>
+                        <i>Craft labore wes anderson cred</i>
+                    </span>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/cisco_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/cisco.png" class="color-img" alt="" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/everyday_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/everyday.png" class="color-img" alt="" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/cocacola_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/cocacola.png" class="color-img" alt="" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/spinworkx_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/spinworkx.png" class="color-img" alt="" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/shell_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/shell.png" class="color-img" alt="" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/natural_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/natural.png" class="color-img" alt="" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/gamescast_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/gamescast.png" class="color-img" alt="" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/everyday_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/everyday.png" class="color-img" alt="" />
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="http://htmlstream.com/unify/assets/img/clients/spinworkx_grey.png" alt="" /> 
-                    <img src="http://htmlstream.com/unify/assets/img/clients/spinworkx.png" class="color-img" alt="" />
-                </a>
-            </li>
-        </ul>
-    </div><!--/flexslider-->
-    <!-- //End Our Clients -->
-</div><!--/container-->		
+        </ul>        
+	</div><!--/row-->
+	<!-- //End Recent Works -->                
+</div><!--/container-->	 	
 <!--=== End Content Part ===-->
 
 <!--=== Footer ===-->
@@ -458,22 +428,18 @@
 <script type="text/javascript" src="http://htmlstream.com/unify/assets/js/modernizr.custom.js"></script>        
 <script type="text/javascript" src="http://htmlstream.com/unify/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
 <!-- JS Implementing Plugins -->           
-<script type="text/javascript" src="http://htmlstream.com/unify/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script type="text/javascript" src="http://htmlstream.com/unify/assets/plugins/gmap/gmap.js"></script>
-<script type="text/javascript" src="plugins/back-to-top.js"></script>
+<script type="text/javascript" src="http://htmlstream.com/unify/assets/plugins/bxslider/jquery.bxslider.js"></script>
+<script type="text/javascript" src="back-to-top.js"></script>
 <!-- JS Page Level -->           
-<script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript" src="http://htmlstream.com/unify/assets/js/pages/contact.js"></script>
+<script type="text/javascript" src="http://htmlstream.com/unify/assets/js/app.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
-        App.initSliders();                
-        Contact.initMap();        
+        App.initBxSlider1();
     });
 </script>
 <!--[if lt IE 9]>
-    <script src="http://htmlstream.com/unify/assets/js/respond.js"></script>
+    <script src="assets/js/respond.js"></script>
 <![endif]-->
 <script type="text/javascript">
   var _gaq = _gaq || [];
